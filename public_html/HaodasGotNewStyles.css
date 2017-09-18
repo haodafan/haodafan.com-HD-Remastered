@@ -1,0 +1,28 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18-Sep-2017, 5:02:30 PM
+    Author     : Haoda Fan
+*/
+.body {
+    
+}
+.jumbotron {
+    
+}
+
+.navbar navbar-default  {
+    background-color: darkviolet;
+    color: white; 
+}
+
+.navbar navbar-default ul li:hover {
+    background-color: indigo;
+}
+
+.navbar navbar-default ul li:click {
+    background-color: black;
+}
