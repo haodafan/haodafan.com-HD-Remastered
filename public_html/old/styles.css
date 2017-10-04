@@ -1,0 +1,190 @@
+body {
+    background-color: #E3E3E3;
+    /*background-image: url(beninEmpire.jpg);*/
+        
+    font-family: sans-serif;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav {
+    position: relative; 
+    top: -9px;
+    padding: 10px 0px 50px 0px;
+    background-color: floralwhite;
+}
+
+#left {
+    float: left;
+    padding-left: 50px;
+}
+#right {
+    float: right;
+    padding-right: 50px;
+}
+
+.nav ul, .nav li, .nav a {
+    display: inline;
+    padding: 10px;
+    text-decoration: none;
+    color: gray;
+}
+
+
+h1 {
+    color: gold;
+    text-align: center;
+}
+h2 {
+    color: blue;
+    text-align: center;
+    font-style: oblique;
+}
+h3 {
+    color: orangered;
+    text-align: center;
+    font-style: italic;
+}
+h4 {
+    color: black;
+    text-align: center;
+    font-style: normal;
+}
+h5,h6{
+    display: inline;
+    text-align: center;
+    color: brown; 
+}
+h6{
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rebeccapurple;
+}
+
+img {
+    border: 3px blue solid;
+}
+
+.main {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.main ul, .main ol{
+    padding: 15px 50px 15px 50px;
+    display: block;
+}
+
+.main li{
+    padding: 6px 20px 6px 20px;
+}
+
+.main p {
+    padding-left: 10px;
+}
+
+/*adding new fonts comic sans
+@font-face {
+    font-family: "Comic Sans MS";
+    src: url("http://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.eot");
+    src: url("http://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.eot?#iefix") format("embedded-opentype"),
+    url("http://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.woff2") format("woff2"),
+    url("http://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.woff") format("woff"),
+    url("http://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.ttf") format("truetype"),
+    url("http://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.svg#Comic Sans MS") format("svg");
+}
+
+.comic {
+    font-family: "Comic Sans MS";
+}
+
+*/
+/* For uniquenesses */
+.unique {
+    color: purple;
+    font-style: italic;
+}
+table{
+    border: 4px solid purple;
+}
+table td {
+    border: 2px dashed purple;
+    font-size: 20px;
+}
+
+.king {
+    font-family: serif;
+}
+
+/* headings */
+.headings {
+    padding: 5px 5px 5px 5px;
+    border-style: solid;
+    border-color: red;
+}
+
+/* JUMBOTRON!!! */
+.jumbotron {
+    background-color: darkmagenta;
+    position: relative;
+    top: -9px;
+    padding: 15px 10px 55px 0px;
+}
+.jumbotron h1 {
+    text-align: center; 
+    color: white;
+    text-shadow: 1px 1px grey;
+}
+.jumbotron h2 {
+    color: floralwhite;
+    text-shadow: 1px 1px grey;
+}
+.jumbotron p {
+    padding: 5px 45px 5px 45px;
+    color: beige
+}
+
+/* Interactive elements of the webpage! */
+.highlightMe:hover{
+    background-color: aqua;
+}
+
+.panel {
+    background-color: cadetblue;
+    border: 2px solid aquamarine;
+    border-radius: 4px; 
+    
+    margin: 15px 15px 15px 15px;
+}
+.panel .panelHead p{
+    padding: 5px 5px 5px 5px;
+    font-family: serif;
+    font-size: 20px;
+    color: white;
+}
+.panel .showOnHover p{
+    padding: 0px 10px 0px 10px;
+    color: cadetblue;
+}
+.panel:hover .showOnHover p{
+    padding: 0px 10px 0px 10px;
+    color: black;
+}
+
+.linkButton a {
+    background-color: purple; 
+    float: left; 
+    margin: 15px 10px 15px 10px;
+    padding: 10px 30px 10px 30px;
+    border-radius: 8px; 
+    color: white;
+}
+.linkButton a:hover {
+    box-shadow: 0px 0px 5px black;
+}
+.linkButton a:active{
+    background-color: black;
+}

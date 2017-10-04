@@ -1,28 +1,114 @@
 /*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+@author: Haoda Fan;
 */
-/* 
-    Created on : 18-Sep-2017, 5:02:30 PM
-    Author     : Haoda Fan
-*/
-.body {
-    
+
+body {
+	background-color: #3b1434;
 }
+
+#whitefont {
+	color: white;
+}
+
 .jumbotron {
-    
+	background-color: #702963;
+    color: white;
 }
 
-.navbar navbar-default  {
-    background-color: darkviolet;
-    color: white; 
+
+/* NAV BAR CUSTOMIZATION */ 
+.navbar-default {
+  background-color: #702963;
+  border-color: #3b1434;
+}
+.navbar-default .navbar-brand {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ecdbff;
 }
 
-.navbar navbar-default ul li:hover {
-    background-color: indigo;
+.navbar-default .navbar-text {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  background-color: #3b1434;
+  color: #ecdbff;
 }
 
-.navbar navbar-default ul li:click {
+/*custom code*/ /*FOR SOME REASON THIS DOESNT WORK*/
+.navbar-default .navbar-nav > li > a:click {
     background-color: black;
+}
+/*end of custom code*/
+
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ecdbff;
+  background-color: #3b1434;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #ecdbff;
+  background-color: #3b1434;
+}
+.navbar-default .navbar-toggle {
+  border-color: #3b1434;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #3b1434;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ecf0f1;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ecf0f1;
+}
+.navbar-default .navbar-link {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-link:hover {
+  color: #ecdbff;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ecf0f1;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ecdbff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ecdbff;
+    background-color: #3b1434;
+  }
+}
+
+/* END OF NAVBAR CUSTOMIZATION */
+
+/* GETTING RID OF ROUNDED EDGES BETWEEN NAVBAR AND JUMBOTRON */
+.container .jumbotron {
+    border-radius: 10px;
+    border-bottom-left-radius: 0px; 
+    border-bottom-right-radius: 0px;
+}
+
+.navbar {
+    border-top-left-radius: 0px; 
+    border-top-right-radius: 0px;
+    border-style:hidden;
 }

@@ -1,0 +1,73 @@
+body {
+    background-color: rgb(35,35,35); /* */
+    padding: 20px;
+    /* font-family: sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+    
+}
+h1 {
+    font-family: serif;
+    font-size: 100;
+}
+.nav {
+    background-color: darkblue; 
+    padding: 30px;
+    /* padding: top right bottom left */
+    
+    color: white; /* text color */
+    
+}
+
+/*ONLY for elements that are in class nav, and are ul, li or a (links) */
+.nav li{
+    display: block; /*displays it in columns */
+    position: relative; /* meaning we can use top/bottom/left/right to move it around, relative to its original position*/
+    top: -20px;
+    padding: 10px; /* when there's only one value, it pads in all directions */
+    text-decoration: none; /* removes the link underlines */
+    left: 50px;
+    float: left; /* it "attaches" to the left when you resize it */
+                  /* displays it in columns*/
+}
+.nav a{
+    color: white; /* text color*/ 
+    text-align: center;
+    text-decoration: none;
+}
+
+.jumbotron {
+    color: white; 
+    background-color: #0055A4;
+    position: relative;
+    top: -9px;
+    padding: 50px 50px 70px 50px;
+    font-size: 20px;
+}
+
+.jumbotron h1{
+    text-align: center;
+}
+
+img{
+    width: auto;
+    height: auto;
+    max-height: 550px;
+}
+.images{
+    background-color: white;
+    padding: 50px;
+    align-items: center;
+    position: relative;
+    top: -10px;
+}
+.explanation {
+    font-size: 20px;
+    background-color: #EF4135;
+    color: #FFFFFF;
+    padding: 50px;
+    position: relative;
+    top: -20px;
+}
+.nav li:hover{
+    background-color: rgb(25,25,112);
+}
