@@ -1,12 +1,5 @@
+<!-- layout.nunjucks -->
 <!DOCTYPE html>
-<!--
-
-THIS IS THE INDEX.HTML FOR MY WEB PROJECTS
-
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <title>Check out some of my projects!</title>
@@ -27,22 +20,15 @@ and open the template in the editor.
 
         <!-- Customized CSS -->
         <link rel="stylesheet" href="../HaodasGotNewStyles.css">
-
-        <!-- Handlebars library -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+        <!-- jQuery library -->
+        <script src="../jquery-3.2.1.min.js"></script>
 
         <!-- Dynamic Component Initialization -->
         <script>
             $(function() {
                 $("#modularnav").load("../NavBarAndJumbo.html");
             });
-
-
-            $(function() {
-              $("#handlebarTemplateHere").load("projectviewer.html");
-            });
         </script>
-        <script src = "handle_it.js"></script>
 
     </head>
     <body>
@@ -55,8 +41,7 @@ and open the template in the editor.
         <div class = "row">
             <div class = "col-sm-12">
                 <div class = "row">
-
-                    <!-- OLD
+                <!--
                     <div class = "col-sm-4 panel panel-default panel-content"></div>
                     <div class = "col-sm-8 panel panel-default">
                         <div class = "panel-head"><h3><a href = "#">Leap the Wall!</a></h3></div>
@@ -66,11 +51,7 @@ and open the template in the editor.
                             </p>
                         </div>
                     </div>
-                  -->
-                  <div id = "handlebarTemplateHere"></div>
-                  <div id = "allProjects"></div>
-
-
+                -->
                 </div>
             </div>
         </div>

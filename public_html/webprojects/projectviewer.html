@@ -1,28 +1,43 @@
-<html>
-<head>
-    <style>
+<!-- THIS IS MY BIG HUGE TEMPLATE -->
+<script id="handlebars" type="text/x-handlebars-template">
+
+<style>
         .panel-default {
-            border: purple
+            border: none
         }
         .panel-header {
-            background-color:darkviolet;
-            color: white; 
+            background-color:#702963;
+            color: white;
         }
         .panel-body {
             background-color:whitesmoke;
             color: black;
         }
-    </style>
-</head>
+</style>
+
+<!-- Handlebars -->
+
+{{#each project}}
 <div class = "col-sm-4 panel-default panel-content pic">
     <!-- insert picture(s) here -->
+    <img src = {{projectPic}}/>
+
 </div>
+
 <div class = "col-sm-8 panel-default words">
     <div class = "panel-header">
         <!-- insert header here -->
+        {{projectName}}
     </div>
     <div class = "panel-body">
         <!-- insert body here -->
+        {{projectDescription}}
+        <br>
+        <a href = {{projectReadMe}}>See the ReadMe!</a>
+        <br>
+        <a href = {{projectLink}}>Project Link!</a>
     </div>
 </div>
-</html>
+{{/each}}
+
+</script>
