@@ -1,0 +1,12 @@
+.panel-default {
+    border: none
+}
+.panel-header {
+    background-color:#702963;
+    color: white;
+    font-size: 16px;
+}
+.panel-body {
+    background-color:whitesmoke;
+    color: black;
+}
