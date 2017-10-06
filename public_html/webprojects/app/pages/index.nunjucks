@@ -1,2 +1,0 @@
-<!-- index.nunjucks -->
-{% extends "layout.nunjucks"}
