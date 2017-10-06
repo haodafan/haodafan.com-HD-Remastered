@@ -14,3 +14,7 @@ $(function() {
   });
 
 });
+
+$(function(){
+  $("#modularFooter").load("webProjectsFooter.html");
+});

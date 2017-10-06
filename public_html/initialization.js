@@ -1,14 +1,14 @@
-/* 
- * 
- * This Javascript file loads all the important components of all the main webpages: 
+/*
+ *
+ * This Javascript file loads all the important components of all the main webpages:
  * -- The Navigation Bar
  * -- The Jumbotron
  * -- The Footer
- * 
- * COMING SOON: 
- * -- Your Account Information and/or login 
+ *
+ * COMING SOON:
+ * -- Your Account Information and/or login
  * -- Fully integrated shoutbox -- OR -- Featured shouts from the shoutbox webproject
- * 
+ *
  *
  */
 
@@ -16,6 +16,9 @@ $(function() {
     $("#modularnav").load("NavBarAndJumbo.html");
 });
 
+$(function() {
+  $("#modularFooter").load("mainFooter.html");
+})
 /*
 $(function () {
     //set parallax background images

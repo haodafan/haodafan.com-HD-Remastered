@@ -1,0 +1,68 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <title>My Development Process</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- BOOTSTRAP -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- / BOOTSTRAP -->
+
+
+        <!-- Customized CSS -->
+        <link rel="stylesheet" href="../HaodasGotNewStyles.css">
+        <link rel="stylesheet" href="panelstyle.css">
+
+        <script src = "suchdynamic.js"></script>
+    </head>
+    <body>
+        <div id = "modularnav"></div>
+        <div class = "container">
+            <div class="well well-lg">
+                <h3>About this webpage!</h3>
+                <div class = "card">
+                    <div class = "card-block text-wrap">
+                        <p> This particular webpage is different from the main one in that almost all components are dynamically loaded rather than just being
+                        static data on an html file. This webpage is modularized to make it easier for me to add, remove, and edit my list of projects. </p>
+                    </div>
+                </div>
+                <div class = "card">
+                    <div class = "card-block text-wrap">
+                        <p> To accomplish this, I used a lightweight templating framework called <a href = "http://handlebarsjs.com"> HandlebarsJS</a>.
+                        The idea is, instead of having all my data stored in the HTML file, I would instead store it in a .json file, called projects.json</p><br>
+                        <p> I have two HTML files, one main HTML file (index.html), and a panel template (projectviewer.html). </p><br>
+                        <p> My main html file would contain all the necessary header tags, some div tags to identify where each thing goes,
+                           and all the required scripts for loading the page. </p>
+                        <p> My template file would have all the required HTML tags for a project panel, but with all the data missing. In its place, is Handlebarjs
+                            code, to identify what kind of data should be put there. </p>
+                        <p> My main handlebar.js script (<a href = "handle_it.js">handle_it.js</a>), has a loop, where for each project in the .json file, it would
+                          fill out a panel with the appropriate data, and append it to the main document. </p>
+                    </div>
+                </div>
+                <h3>Some difficulties I encountered... </h3>
+                <div class = "card">
+                    <div class = "card-block text-wrap">
+                        <p> One of the most frustrating issues I had, was when my Handlebars.compile function would refuse to fill out the data in the panel. </p>
+                        <p> I eventually figured out that it was because the script was being executed too early.
+                            Since my page was dynamically loaded by javascript scripts, the panel that contains the handlebars template didn't finish loading
+                            before the handlebars script executed, so handlebars had nowhere to put the data in the first place. </p>
+                        <p> I solved this issue in two ways. The first way I did it was, instead of dynamically loading my Handlebars template, I simply
+                            included the template in my main html file (I made a new file called <a href = "oneFile.html">oneFile.html</a>). But, I was not
+                            satisfied with this result, since I wanted the whole page to be as dynamic and modular as possible. Instead what I did here, was
+                            that I would put all my loading scripts into a single document.ready function, to make sure they are loaded in order. You can see my
+                            loading script here: <a href = "suchdynamic.js">suchdynamic.js</a></p> <br>
+                    </div>
+                </div>
+                <h4> Thanks for taking the time to look at the messy development process for my simple little webpage!</h4>
+            </div>
+        </div>
+    </body>
+</html>

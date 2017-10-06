@@ -1,11 +1,11 @@
-/* 
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 
 
-//This assumes the navigation bar has already loaded onto the right page. 
+//This assumes the navigation bar has already loaded onto the right page.
 
 $(function () {
     var thisPath = window.location.pathname;
@@ -38,7 +38,7 @@ $(function () {
 
     $(".navbar").affix({
         offset: {
-            top: 100
+            top: 600
         }
     });
 });
