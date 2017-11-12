@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Don't shoot me!</title>
+        <link rel = "icon" href = "http://www.radioalkul.com/wp-content/uploads/2015/11/7a16b1_1b40d9cb934348958a48285974c6d947.png"/>
+    </head>
+    <body>
+        <h2> Enter your name: </h2>
+        <input type = "text" id = "name" value = "Emerly">
+        <br>
+        <h2> Enter your message to the masses:  </h2>
+        <input type = "text" id = "msg" value = "The air is nice out here HAHA just kidding I'm in Beijing." style = "width: 600px;">
+
+        <h2> Upload an image!</h2>
+        <button type = "button" id = "upload">(this feature doesn't work yet)</button>
+        <br>
+
+        <h2> Send to... </h2>
+
+        <input type = "text" id = "id"> </input>
+        <ul>
+          <li>Haoda: 176758903</li>
+          <li>Edwin: 1494633</li>
+          <li>Emily: 219878581</li>
+	  <li>Telegram channel: -1001053316055</li>
+          <li>Group Chat: -12880731</li>
+        </ul>
+
+        <h3> When you're ready... </h3>
+        <button type = "button" id = "send" onclick="sendMessage()">SEND MESSAGE</button>
+
+        <p id = "sendstatus"></p>
+        <script src = jquery-3.0.0.js></script>
+        <script>
+        var connection;
+
+        function sendMessage(){
+            id = parseInt(document.getElementById("id").value);
+            msg = document.getElementById("msg").value;
+            name = document.getElementById("name").value;
+            connection.send(JSON.stringify({
+                id: id,
+                name: name,
+                message: msg
+            }));
+        }
+
+        setTimeout(function(){
+            connection = new WebSocket("ws://208.68.38.157:8080/");
+            connection.onopen = function() {
+                connection.onmessage = function (event) {
+                    console.log("Got data from the server, would you like to see? Here: " + event.data);
+                    var jsonObject = JSON.parse(event.data);
+                    //use the json object here
+
+		    if(jsonObject.status === 200){ //if it's good shit
+                        $("#sendstatus").append("<br> Message successfully sent!");
+                    }
+                };
+            };
+        }, 500);
+
+    </script>
+
+    </body>
+</html>
