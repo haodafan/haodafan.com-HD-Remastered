@@ -3,26 +3,29 @@
 <!-- Handlebars -->
 
 {{#each project}}
-<div class = "col-sm-4 panel-default panel-content pic">
-    <!-- insert picture(s) here -->
-    <img src = {{projectPic}}/>
+<div class = "row">
+	<div class = "col-sm-4 panel-default panel-content pic">
+		<!-- insert picture(s) here -->
+		<img src = {{projectPic}} style = "width:100%"> </img>
 
-</div>
+	</div>
 
-<div class = "col-sm-8 panel-default words">
-    <div class = "panel-header">
-        <!-- insert header here -->
-        {{projectName}}
-    </div>
-    <div class = "panel-body">
-        <!-- insert body here -->
-        {{projectDescription}}
-        <br>
-        <a href = {{projectReadMe}}>See the ReadMe!</a>
-        <br>
-        <a href = {{projectLink}}>Project Link!</a>
-    </div>
+	<div class = "col-sm-8 panel-default words">
+		<div class = "panel-header" style = "padding: 10px">
+			<!-- insert header here -->
+			{{projectName}}
+		</div>
+		<div class = "panel-body" style = "height:100%">
+			<!-- insert body here -->
+			{{projectDescription}}
+			<br>
+			<a href = {{projectReadMe}}>See the ReadMe!</a>
+			<br>
+			<a href = {{projectLink}}>Project Link!</a>
+		</div>
+	</div>
 </div>
+<br>
 <br>
 {{/each}}
 

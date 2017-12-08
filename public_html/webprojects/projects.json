@@ -1,8 +1,7 @@
-
 {
   "project" : [
     {
-      "projectPic" : "https://raw.githubusercontent.com/edwinfinch/lecturebuddy/master/frontend/biglecture.png",
+      "projectPic" : "leap.png",
       "projectName" : "Leap the Wall",
       "projectDescription" : "Do you use Telegram and live in China and absolutely hate the Great Firewall? Well, why not send a message through our proxy-bot!",
       "projectReadMe" : "http://haodafan.com/bot_info/index.html",
@@ -14,6 +13,13 @@
 		"projectDescription" : "Have real-time non-intrusive feedback directly from the audience! Won 2nd place at McHacks 2017 in McGill University.",
 		"projectReadMe" : "https://devpost.com/software/lecture-buddy",
 		"projectLink" : "https://github.com/edwinfinch/lecturebuddy"
-	}
+	},
+  {
+    "projectPic" : "newmeta.png",
+    "projectName" : "Haoda Fan Dot Com HD Remastered",
+    "projectDescription" : "Wish to know a bit more about me? Want to laugh at my self-deprecating jokes and see my amazing web development skills in action? Well come visit my website, which also happens to be this website. Whoa, this is kind of meta. ",
+    "projectReadMe" : "https://github.com/haodafan/haodafan.com-HD-Remastered/wiki/Website-Development",
+    "projectLink" : "http://haodafan.com"
+  }
   ]
 }

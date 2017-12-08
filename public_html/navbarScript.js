@@ -35,10 +35,11 @@ $(function () {
     else {
         $("#" + thisPage).addClass("active");
     }
-
+	/*
     $(".navbar").affix({
         offset: {
             top: 600
         }
     });
+	*/
 });
