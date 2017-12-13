@@ -1,33 +1,22 @@
 /*
 @author: Haoda Fan;
 */
-/*
+
 body {
 	background-color: #3b1434;
 }
-*/
 
 .whiteText {
 	color: white;
 }
 
-
-body {
-	padding: 80px;
-	background: url("back.png") repeat;
-}
-
 .jumbotron {
-	background-color: #3b1434;
-  color: white;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	margin-top: 0px;
-	width: 100%;
+	background-color: #702963;
+    color: white;
 }
 
 
-/* NAV BAR CUSTOMIZATION */
+/* NAV BAR CUSTOMIZATION */ 
 .navbar-default {
   background-color: #702963;
   border-color: #3b1434;
@@ -111,13 +100,15 @@ body {
 
 /* END OF NAVBAR CUSTOMIZATION */
 
-/* GETTING RID OF ROUNDED EDGES  */
+/* GETTING RID OF ROUNDED EDGES BETWEEN NAVBAR AND JUMBOTRON */
 .container .jumbotron {
-    border-radius: 0px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px; 
+    border-bottom-right-radius: 0px;
 }
 
 .navbar {
-    border-top-left-radius: 0px;
+    border-top-left-radius: 0px; 
     border-top-right-radius: 0px;
     border-style:hidden;
 }
