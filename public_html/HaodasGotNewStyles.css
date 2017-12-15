@@ -8,22 +8,44 @@ body {
 */
 
 .whiteText {
-	color: white;
+	align-self: center;
+	background-color: white;
+	color: black;
+	padding: 3px;
+	border-style:solid;
+	border-color: #66023C;
 }
 
 
 body {
-	padding: 80px;
-	background: url("back.png") repeat;
+
 }
 
 .jumbotron {
 	background-color: #3b1434;
   color: white;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	margin-top: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 0px;
 	width: 100%;
+}
+
+.banner {
+	background-color: #3b1434;
+	color: white;
+	padding: 15px;
+	width: 100%;
+	padding-left: 35px;
+}
+
+.contacts {
+
+}
+
+.contact-icons img {
+	max-width: 100%;
+	max-height: 100%;
+
 }
 
 
@@ -111,13 +133,16 @@ body {
 
 /* END OF NAVBAR CUSTOMIZATION */
 
-/* GETTING RID OF ROUNDED EDGES  */
-.container .jumbotron {
-    border-radius: 0px;
-}
+
 
 .navbar {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-style:hidden;
+}
+
+.well {
+	border-style: line;
+	border-width: 4px;
+	border-color: #3b1434;
 }

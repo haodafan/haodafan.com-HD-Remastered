@@ -4,6 +4,7 @@
  * -- The Navigation Bar
  * -- The Jumbotron
  * -- The Footer
+ * -- The background
  *
  * COMING SOON:
  * -- Your Account Information and/or login
@@ -12,24 +13,19 @@
  *
  */
 
+//Navbar and jumbo (now banner)
 $(function() {
     $("#modularnav").load("NavBarAndJumbo.html");
 });
 
+// Footer
 $(function() {
   $("#modularFooter").load("mainFooter.html");
-})
-/*
-$(function () {
-    //set parallax background images
-    $("#modularBackground").css({
-        "background-image": "url(https://wallpapercave.com/wp/RVQBC3t.jpg)",
-        "height": "1600px",
-        "background-attachment": "fixed",
-        "background-position": "center",
-        "background-repeat": "no-repeat",
-        "background-size": "cover",
-    });
-    console.log("Background image code end.");
 });
-*/
+
+// Set background
+$(function () {
+  $.getScript('background.js', function () {
+    console.log("background script loaded.");
+  })
+})
