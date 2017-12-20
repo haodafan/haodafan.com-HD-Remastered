@@ -48,6 +48,13 @@ body {
 
 }
 
+.imgBanner {
+	align-items: center;
+}
+
+img .imgBanner {
+	width: 100%;
+}
 
 /* NAV BAR CUSTOMIZATION */
 .navbar-default {
