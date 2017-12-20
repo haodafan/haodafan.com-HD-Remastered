@@ -1,5 +1,7 @@
 .panel-default {
-    border: none
+    border-style: solid;
+	border-color: #66023C;
+	border-width: 4px;
 }
 .panel-header {
     background-color:#702963;

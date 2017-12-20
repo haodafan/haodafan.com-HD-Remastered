@@ -7,7 +7,7 @@ function setPattern() {
   //set parallax background pattern
 
   var index = Math.floor(Math.random() * 6);
-  var pattern = "url('back" + index.toString() + ".png')";
+  var pattern = "url('http://haodafan.com/back" + index.toString() + ".png')";
 
   $("body").css({
       "background-image": pattern,
