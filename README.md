@@ -14,4 +14,4 @@ The other way of doing it is to set up a local host server to run it from. It's 
 I was about to make my own tutorial but il just link you to [an actual real tutorial that probably would explain it better than I ever could](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server).
 
 # Wow your website is super intriguing and cool and all kinds of stuff, where can I learn more??????? 
-Whoa don't get too excited there, Little Billy. If you want to learn more about the development of my website, visit my [WIKI PAGE](https://github.com/haodafan/haodafan.com-HD-Remastered/wiki)
+Whoa don't get too excited there, Little Billy. If you want to learn more about the development of my website, visit my [WIKI PAGE](https://github.com/haodafan/haodafan.com-HD-Remastered/wiki/Website-Development)
